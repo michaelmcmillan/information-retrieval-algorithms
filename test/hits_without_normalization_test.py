@@ -1,5 +1,5 @@
 import unittest
-from page_ranking.hits_without_normalization import Page, HITS
+from page_ranking.HITS.hits_without_normalization import Page, HITS
 
 class TestHitsWithoutNormalization(unittest.TestCase):
 

@@ -69,22 +69,3 @@ class HITS(object):
         for page in self.pages:
             representation += str(page) + '\n'
         return representation 
-
-A = Page('A')
-B = Page('B')
-C = Page('C')
-D = Page('D')
-
-A.points_to([C])
-B.points_to([A, C, D])
-#C.points_to([A])
-D.points_to([B])
-
-hits = HITS([A, B, C, D])
-hits.iterate(times = 1)
-
-print A.auth
-#assert A.auth == 1
-#assert B.auth == 1
-#assert C.auth == 1
-#assert D.auth == 1

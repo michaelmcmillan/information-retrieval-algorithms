@@ -30,7 +30,7 @@ class TestTermFrequency(unittest.TestCase):
         term = 'Norway'
         self.assertEquals(term_frequency(document, term), 1)
 
-    def test_TF_of_a_term_mentioned_twice_is_two(self):
-        document = Document('I live in norway. I like norway.')
+    def test_TF_of_a_term_mentioned_three_times_in_a_document_with_five_terms_is_less_than_three(self):
+        document = Document('Love norway. Norway norway okay.')
         term = 'norway'
-        self.assertEquals(term_frequency(document, term), 2)
+        self.assertEquals(term_frequency(document, term) < 3, True)

@@ -1,6 +1,6 @@
 import unittest
-from document import Document
-from inverse_document_frequency import inverse_document_frequency
+from term_weighting.document import Document
+from term_weighting.inverse_document_frequency import inverse_document_frequency
 
 class TestInverseDocumentFrequency(unittest.TestCase):
 
